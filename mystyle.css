@@ -227,3 +227,46 @@ div.desc {
 .introduction li{
   font-size: 20px;
 }
+
+@media screen and (max-width: 360px) {
+  .name-topic {
+      font-size: 15px;
+  }
+  nav{
+      margin: 0;
+      width: 100%;
+  }
+  nav ul li {
+      margin: 0 30px;
+      padding: 5px;
+      font-size: 10px;
+  }
+
+  .container {
+      display: flex;
+      flex-direction: column;
+  }
+ 
+  .introduction {
+      padding: 10px;
+      color: aliceblue;
+      width: 100%;
+  }
+  
+  .introduction-video {
+      width: 100%;
+  }
+  .introduction-one,.introduction-two,.introduction-three {
+      padding: 10px;
+  }
+  .introduction .topic {
+      font-size: 20px;
+  }
+
+  .introduction li{
+      font-size: 10px;
+  }
+  footer {
+      font-size: 7px;
+  }
+}

@@ -1,119 +1,102 @@
 * {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-    font-family:monospace;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-family: monospace;
 }
 
-.supat {
-    text-shadow: 4px 4px 6px #c8f10dc9;
-    font-size: 20px;
+body {
+  background-image: url(resources/mypic.JPG);
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
 }
 
 header {
-    width: 100%;
-    border: 10px solid color(srgb red green blue) ;
-    padding: 50px;
-    background-color: rgba(9, 11, 10, 0.616);
-    text-align: left;
-    color:#f6fafc;
-
+  padding: 0 ;
+  color:#f6fafc;
 }
 
-span {
-    width: 50%;
-    border: 10px solid color(srgb red green blue) ;
-    padding: 50px;
-    background-color: rgba(9, 11, 10, 0.616);
-    text-align: right;
-    color:#f6fafc;
-    float: right;
-    
+.name-topic {
+  background-color: #0b0b0b65;
+  text-shadow: 4px 4px 6px #c8f10dc9;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
 }
 
-nav {
-    width: 100%;
-    padding: 15px;
-    border: 2px hidden;
-    color: #f6fafc;
-    background-color: rgba(33, 36, 36, 0.75);
-    
+nav{
+  margin: 15px;
+  width: 20%;
+  background-color: #333333ba;
 }
 
-.mainone {
-    width: 50%;
-    padding: 10%;
-    margin: 10%;
-    float: right;
-    position: relative;
-    left: 10%;
-    
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
-.contact {
-    padding: 20px;
-    margin: 20px;
-    position: relative;
-    top: 50px;
-    border:6px solid; color: black;border-radius: 15px;
-    background-color: rgba(234, 227, 227, 0.712);
-    text-align: center;
-    color: #f6fafc; 
-    font-size: 30px;
+nav ul li:hover{
+  background-color: black;
 }
 
-a:link, a:visited {
-    background-color: rgb(233, 226, 226);
-    color: black;
-    border: 2px solid rgb(42, 53, 42);
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-  }
-  
-  a:hover, a:active {
-    background-color: rgb(80, 88, 80);
-    color: white;
-  }
+nav ul li {
+  margin: 0 50px;
+  padding: 7%;
+  font-size: 20px;
+}
 
-  footer {
-    color: #f6fafc;
-    text-align: center;
-  }
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
 
-  .introduction {
-    margin-top: 50px;
-    color: #f6fafc;
-    font-size: 20px;
-  }
+.container {
+  display: flex;
+  flex-direction: row;
+}
 
-  .introductiontwo {
-    width: 50%;
-    padding: 5%;
-    margin: 5%;
-    float: left;
-    color: #f6fafc;
-    font-size: 20px;
-    position: relative;top: 1065px;
-    position: absolute;
-  }
+.introduction {
+  color: aliceblue;
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+}
 
-  .introductionthree {
-    width: 50%;
-    padding: 5%;
-    margin: 5%;
-    float: left;
-    color: #f6fafc;
-    font-size: 20px;
-    position: relative;top: 1300px;
-    position: absolute;
-  }
-  
-@media screen and (max-width: 368px) {
-  * {
-    background-image: url(resources/moon.jpg);
-  }
+.introduction-video {
+  margin: 15px;
+  width: 25%;
+  background-color: rgba(0, 0, 0, 0.678);
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.introduction-one,.introduction-two,.introduction-three {
+  padding: 20px;
+}
+
+.introduction .topic {
+  font-size: 50px;
+}
+
+.introduction li{
+  font-size: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: white;
 }
 
   .maintwo {
@@ -195,4 +178,52 @@ div.desc {
     border: 1px solid;
     padding: 10px;
     font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .name-topic {
+      font-size: 25px;
+  }
+  nav ul li {
+      margin: 0 30px;
+      padding: 30px 5px;
+      font-size: 15px;
+  }
+  body{
+      background-image: url(resources/dark.jpg);
+  }
+  .container {
+      flex-wrap: wrap;
+  }
+  .introduction {
+      width: 70%;
+  }
+  .introduction-one,.introduction-two,.introduction-three {
+      padding: 70px;
+  }
+  .introduction .topic {
+      font-size: 30px;
+  }
+  .introduction li{
+      font-size: 10px;
+  }
+  .introduction-video{
+      margin:0;
+      width: 100%;
+  }
+  footer {
+      font-size: 15px;
+  }
+}
+
+.introduction li{
+  font-size: 20px;
 }

@@ -1,74 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Homepage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="mystyle.css">
+    <title>Responsive Website</title>
 </head>
-    <body style="background-image: url('resources/mypic.JPG');
-             background-size:cover; background-repeat: no-repeat;"></body>
+<body>
     <header>
-        <table style="width: 100%;">
-            <tr>
-                <th class="supat"><h1>Supat Denprasert</h1></th>
-                <th><h3>about</h3></th>
-                <th><h3>works</h3></th>
-                <th><h3>contact</h3></th>
-            </tr>
-        </table>
+        <section class="name-topic">
+            <h1>Supat Denprasert</h1>
+            <p>Your journey to success starts here.</p>
+        </section>
     </header>
-
+    <div class="container">
     <nav>
-        <table style="width: 100%">
-            <tr>
-                <th><a class="home" href="index.html">Home</a></th>
-                <th><a class="journeys" href="myjourney.html">My Journey</a></th>
-                <th><a class="future" href="myfuture.html">My Future</th>
-            </tr>
-        </table>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="myfuture.html">My Journey</a></li>
+            <li><a href="myfuture.html">My Future</a></li>
+            <li><a href="myfuture.html">Contact</a></li>
+        </ul>
     </nav>
-
-    <main class="mainone">
-        <h1 style="font-size:20px;color: aliceblue;">My CSTU Story</h1> 
-        <h1 style="font-size:80px;color: aliceblue;">Supat Denprasert</h1> 
-        <p style="font-size: 20px;color: aliceblue;">When creating website become easier for you</p>
-        <video width="420" height="380" controls>
-            <source src="resources/myvdo.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video>
-        
-          <div class="introduction">
-            </style>
-          <h1>Artist Profile</h1>
-          <ul>
-              <li><p>Name : Supat Denprasert</p></li>
-              <li><p>Age : 20</p></li>
-              <li><p>Artis name : Kunyoru</p></li>
-              <li><p>Type of music : T-pop & J-pop</p></li>
-              <li><p><mark>Live Time </mark> : Tu Night Market ( Wednesday 19:30-21:00 )</p></li>
-              <li><p>For Part-time Job : Acoustic Promotion
-                  (<del> 150</del><ins> 120bath!!!</ins> /hrs)</p></li>
-                  <details>
-                      <summary>More About</summary>
-                          <p>If you have any inquiries , please do not hestiate to contact us with Gmail : <strong>Supat.den@dome.tu.ac.th</strong></p>
-                  </details>
-  
-          </ul></div>
-        <a class="contact" href="myfuture.html">Contact for Works</a>
-    </main>
-
-    <article>
-        <div class="introductiontwo">
-            <ul>
-                <h1>CSTU Profile</h1>
+    <div class="introduction">
+        <div class="introduction-one">
+            <h1 class="topic">CSTU Profile</h1>
+            <ul>    
                 <h3>Qualification</h3>
                 <li><p>Educated from Ramkhamhaeng University of Bachelor of Arts Program in Japanese</p></li>
                 <li><p>Studying at Computer Science as minor in Thammasat University</p></li> 
                 <li><p>Technical skill : HTML , CSS , Git , figma</p></li>
-             </ul>
-             </div>
-             <div class="introductionthree">   
+            </ul>
+        </div>
+
+        <div class="introduction-two">
             <ul>
-                <h1>Japanese Translator Profile</h1>
+                <h1 class="topic">Artist Profile</h1>
+                <li><p>Name : Supat Denprasert</p></li>
+                <li><p>Age : 20</p></li>
+                <li><p>Artis name : Kunyoru</p></li>
+                <li><p>Type of music : T-pop & J-pop</p></li>
+                <li><p><mark>Live Time </mark> : Tu Night Market ( Wednesday 19:30-21:00 )</p></li>
+                <li><p>For Part-time Job : Acoustic Promotion
+                    (<del> 150</del><ins> 120bath!!!</ins> /hrs)</p></li>
+                    <details>
+                        <summary>More About</summary>
+                            <p>If you have any inquiries , please do not hestiate to contact us with Gmail : <strong>Supat.den@dome.tu.ac.th</strong></p>
+                    </details>
+            </ul>
+        </div>
+
+        <div class="introduction-three">
+            <ul>
+                <h1 class="topic">Japanese Translator Profile</h1>
                 <h3>Qualification</h3>
                 <li><p>Educated from Ramkhamhaeng University of Bachelor of Arts Program in Japanese</p></li>
                 <li><p>Studying at Japanese majority in Thammasat University</p></li>
@@ -80,19 +64,23 @@
                     </ruby>) : N1(2023) </p></Li>
                 <li><p>Mainichi Japanese Exchange Scholarship : 10Month (2022)</p></li>
                 <li><p>Good command of written and Spoken Japanese</p></li>
-             </ul>
+            </ul>
         </div>
-    </article>
-    
+        </div>
+
+    <section class="introduction-video">
+        <h1>My CSTU Story</h1> 
+        <h1>Supat Denprasert</h1> 
+        <p>When creating website become easier for you</p>
+        <video width="200" height="210" controls>
+            <source src="resources/myvdo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+    </section>
+    </div>
+        
     <footer>
-        <table class="footer" style="width: 100%;
-                    background-color: rgba(0, 0, 0, 0.644);padding: 50px;">
-            <tr>
-                <td>IG : Kunyoru</td>
-                <td>FB : Supat Denprasert</td>
-                <td>X : Kunyoru</td>
-            </tr>
-        </table>
-        <p>Copyright 2024</p>
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
     </footer>
+</body>
 </html>

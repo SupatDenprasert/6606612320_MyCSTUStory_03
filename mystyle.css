@@ -103,9 +103,6 @@ footer {
   color: white;
 }
 
-
-
-
 .body-two {
   background-image: url(resources/dark.jpg);
   background-size: cover;
@@ -125,76 +122,55 @@ table,th,td {
   color: #f6fafc;
 }
 
-
-
-
-
-
-
-
-
-
-.mainthree {
+.body-three {
+  background-image: url(resources/moon.jpg);
+  background-size: cover;
+  line-height: 1.6;
+}
+.container-future {
+  display: flex;
+  flex-direction: row;
+}
+.main-three {
     width: 100%;
     padding: 0%;
     margin: 0%;
 }
+
+.gallery-flex {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
   
   div.gallery {
-    margin:20px;
+    width: 40%;
+    margin:10px;
+    padding: 20px;
     border: 1px solid #ccc;
-    float: inline-start;
-    position: relative;left: 280px;
-}
-  
-div.gallery:hover {
-    border: 1px solid #777;
-}
+  }
   
 div.gallery img {
     width:100%;
 }
-  
-.textfuture {
-    margin: 30px;
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+.text-future {
+    margin: 10px;
     padding: 50px;
     color: #f6fafc;
-    font-size: 30px;
+    font-size: 20px;
 }
-  
+
 div.desc {
-    color: #f6fafc;
-    padding: 15px;
-    text-align: center;
-    font-size: 20px;
+  color: #f6fafc;
+  padding: 10px;
+  text-align: center;
+  font-size: 15px;
 }
-  
-.contacttable  {
-    background-color: rgba(0, 0, 0, 0.716);
-    margin: 70px;
-    text-align: center;
-    color: #f6fafc;
-    position: relative;left: 140px;
-}
-  
-.contacttable th {
-    border: 2px dashed;
-    padding: 30px;
-    font-size: 25px;
-}
-  
-.contacttable td {
-    border: 1px solid;
-    padding: 10px;
-    font-size: 20px;
-}
-
-
-
-
-
-
-
 
 
 @media screen and (max-width: 768px) {
@@ -239,6 +215,23 @@ div.desc {
    margin:40px 10px;
     padding: 10px;
     font-size:15px;
+  }
+  .body-three {
+    background-image: url(resources/dark.jpg);
+    background-size: cover;
+  }
+  .gallery-flex {
+    display: flex;
+    flex-direction: column;
+
+  }
+  div.gallery {
+    width: 70%;
+    margin:5px;
+    padding: 20px;
+  }
+  .text-future {
+    font-size: 15px;
   }
 }
 
@@ -294,4 +287,22 @@ div.desc {
       padding: 5px;
       font-size:10px;
     }
+   .container-future {
+      display: flex;
+      flex-direction: column;
+  }
+  div .gallery img {
+      width: 100%;
+      height: 150px;
+      margin: 0px;
+      padding: 0px;
+    }
+  .gallery  {
+    position: relative;
+   left: 50px;
+  }
+  .text-future {
+    margin: 0px;
+    font-size: 13px;
+  }
 }

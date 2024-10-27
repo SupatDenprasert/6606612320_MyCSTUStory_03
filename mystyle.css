@@ -27,6 +27,9 @@ header {
   text-align: center;
   padding: 50px 20px;
 }
+section>p {
+  font-size: smaller;
+}
 
 nav{
   margin: 15px;
@@ -48,7 +51,7 @@ nav ul li:hover{
 
 nav ul li {
   margin: 0 50px;
-  padding: 7%;
+  padding: 15px;
   font-size: 20px;
 }
 
@@ -93,37 +96,43 @@ nav ul li a {
 }
 
 footer {
+  width: 100%;
   text-align: center;
   padding: 20px;
   background: #333;
   color: white;
 }
 
-  .maintwo {
-    width: 50%;
-    padding: 5%;
-    margin: 15%;
-    float: left;
-  }
 
-.journey  {
-  background-color: rgba(0, 0, 0, 0.716);
-  margin: 70px;
+
+
+.body-two {
+  background-image: url(resources/dark.jpg);
+  background-size: cover;
+  line-height: 1.6;
+}
+.container-journey {
+  display: flex;
+  flex-direction: row;
+}
+
+table,th,td {
+  width: 80%;
+  margin:80px 20px;
+  padding: 20px;
+  border: #f6fafc 1px solid;
+  flex-direction: row;
   color: #f6fafc;
-  position: relative;right:80px;
 }
 
-.journeytable th {
-  border: 2px dashed;
-  padding: 40px;
-  font-size: 25px;
-}
 
-.journeytable td {
-  border: 1px solid;
-  padding: 10px;
-  font-size: 20px;
-}
+
+
+
+
+
+
+
 
 .mainthree {
     width: 100%;
@@ -222,11 +231,17 @@ div.desc {
   footer {
       font-size: 15px;
   }
+  .introduction li{
+      font-size: 20px;
+  }
+  table,th,td {
+    width: 80%;
+   margin:40px 10px;
+    padding: 10px;
+    font-size:15px;
+  }
 }
 
-.introduction li{
-  font-size: 20px;
-}
 
 @media screen and (max-width: 360px) {
   .name-topic {
@@ -268,5 +283,15 @@ div.desc {
   }
   footer {
       font-size: 7px;
+    }
+  .container-journey {
+      display: flex;
+      flex-direction: column;
   }
+  table,th,td {
+      width: 100%;
+      margin: 20px 0 20px 0px;
+      padding: 5px;
+      font-size:10px;
+    }
 }
